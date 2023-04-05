@@ -2,23 +2,31 @@ package com.bootcoding.java.flowcontrol;
 //WAP to check wither the numbers given by the user is palindrome or not
 public class PalindromeNumCheckerWhileLoop {
     public static void main(String[] args) {
+        //Take input from user
         for(int i = 0; i < args.length; i++){
             String value = args[i];
             int ui = Integer.parseInt(value);
-
+            //As value of ui change after while loop hence we copy it to temp variable.
             int temp = ui;
+            //Variable r is used to store reverse number
             int r = 0;
-
-            while(ui != 0){
-                r = r * 10 + ui%10;
-                ui = ui/10;
-            }
-            //To check if given number is palindrome or not.
-            if(r == temp){
-                System.out.println(temp + " is palindrome number." );
-            }
-            else{
+            //if input number is negative it is not a palindrome number
+            if(ui < 0) {
                 System.out.println(temp + " is not a palindrome number.");
+            }
+            //if input number is zero or positive
+            else {
+                //logic to reversing number
+                while (ui != 0) {
+                    r = r * 10 + ui % 10;
+                    ui = ui / 10;
+                }
+                //To check if given number is equal to reverse number or not if true palindrome if false not palindrome.
+                if (r == temp) {
+                    System.out.println(temp + " is palindrome number.");
+                } else {
+                    System.out.println(temp + " is not a palindrome number.");
+                }
             }
         }
     }
