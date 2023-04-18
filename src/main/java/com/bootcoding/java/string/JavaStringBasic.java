@@ -36,7 +36,5 @@ public class JavaStringBasic {
                 Hence, a new string is created even though same string is already exist in the memory pool.
          */
 
-
-
     }
 }
