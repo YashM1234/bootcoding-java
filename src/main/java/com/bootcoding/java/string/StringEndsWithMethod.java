@@ -16,7 +16,7 @@ public class StringEndsWithMethod {
         //WAP to demonstrate endsWith() method
         String str = "This is string which we have to check";
         System.out.println(str.endsWith("check"));
-        System.out.println(str.endsWith("ck"));
+        System.out.println(str.endsWith("ech"));
         System.out.println(str.endsWith("This"));
         System.out.println(str.endsWith("is"));
     }
