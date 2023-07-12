@@ -3,7 +3,7 @@ package com.bootcoding.java.recursion;
 public class MinElementArrRecursion {
     public static void main(String[] args) {
         //Declare and initialise array
-        int[] nums = {2, 4, 3, 1, 5, 0};
+        int[] nums = {2, 4, 3, 10, 5, 1};
         int min = nums[0];
         int index = 0;
         //Method Calling
@@ -22,7 +22,7 @@ public class MinElementArrRecursion {
 
         //OR
 
-        min = Math.min(min, nums[index]);
+//        min = Math.min(min, nums[index]);
         return minElement(nums, min, ++index);
     }
 }
