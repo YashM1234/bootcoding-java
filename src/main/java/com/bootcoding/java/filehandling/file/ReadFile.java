@@ -35,7 +35,7 @@ public class ReadFile{
         try{
             FileReader readChar = new FileReader(file);
             int i;
-            while((i = readChar.read()) != - 1){
+            while((i = readChar.read()) != -1){
                 System.out.print((char) i);
             }
         }catch(IOException ex){
